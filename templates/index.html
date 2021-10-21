@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+    <head>
+        <title>Halloween Sound Board</title>
+        <style type="text/css">
+            .style1
+            {
+                width: 50%;
+            }
+        </style>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script language="javascript" type="text/javascript">
+            function Button_onclick(action_play) {
+                $.ajax({ url: '/' + "play/" + action_play });
+            }
+        </script>
+    </head>
+    <body>
+                    <img id="ImgEmployee" src="https://www.rd.com/wp-content/uploads/2021/07/GettyImages-1184858660-e1627590587655.jpg?resize=700,467" alt="MISSsING" />
+
+	<table align="left" class=style1">	            
+		<tr>
+                <td colspan="1" style="text-align: center">
+                    <input id="btnA" type="button" value="A" onclick="Button_onclick('A')" />
+                </td>
+            </tr>
+            <tr>
+		<td colspan="1" style="text-align: center">
+                    <input id="btnB" type="button" value="B" onclick="Button_onclick('B')" />
+                </td>
+	    </tr>
+	     
+            <tr>	
+		<td colspan="1" style="text-align: center">
+                    <input id="btnC" type="button" value="C" onclick="Button_onclick('C')" />
+		</td>
+            </tr>
+
+            <tr>
+                <td colspan="1" style="text-align: center">
+                    <input id="btnD" type="button" value="D" onclick="Button_onclick('D')" />
+                </td>
+            </tr>
+	</table>
+    
+	</body>
+</html>
+
