@@ -6,7 +6,12 @@ RUN install_packages gstreamer1.0-tools \
                         gstreamer1.0-pulseaudio 
 
 RUN python3 -m pip install flask                        
-                        
+
+ENV PULSE_SERVER=tcp:localhost:4317
+
 WORKDIR /usr/src/app
-COPY . . 
-CMD ["bash"]
+COPY sound/ sound/
+COPY templates/ templates/
+COPY main.py main.py
+
+CMD ["python3", "main.py"]

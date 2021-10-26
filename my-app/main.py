@@ -6,9 +6,9 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-
 # Load the main form template on webrequest for the root page
 @app.route("/")
+
 def main():
 
     # Create a template data dictionary to send any data to the template
@@ -17,8 +17,6 @@ def main():
         }
     # Pass the template data into the template powrcycle.html and return it to the user
     return render_template('index.html', **templateData)
-
-
 
 @app.route("/play/<state>")
 def action_play(state):
@@ -39,7 +37,7 @@ def action_play(state):
                 return "D\n"
                
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host='0.0.0.0', port=80, debug=True)
 
 
 
