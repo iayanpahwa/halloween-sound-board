@@ -1,5 +1,5 @@
 # halloween-sound-board
-raspberry pi based halloween sound board
+Raspberry pi based halloween sound board
 
 [![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/iayanpahwa/halloween-sound-board)
 
